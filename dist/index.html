@@ -128,7 +128,14 @@
   src: url(https://fonts.gstatic.com/s/tiktoksans/v8/70l9u7g-Lm8OXGnh_Ow1sUfFMmlnhbRF425wxXH-UGeud7XItbaHtxhgqsbDdQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-#nav .nav-dot{object-fit:cover;flex:0 0 18px}#pricing .pr-price strong{font-size:clamp(30px,4.2vw,66px)}#challenge .ch-points b{white-space:nowrap}#footer .ft-word{font-size:min(15vw,185px)}::selection{background:var(--color-5);color:var(--color-1)}</style>
+#nav .nav-dot{object-fit:cover;flex:0 0 18px}#pricing .pr-price strong{font-size:clamp(30px,4.2vw,66px)}#challenge .ch-points b{white-space:nowrap}#footer .ft-word{font-size:min(15vw,185px)}::selection{background:var(--color-5);color:var(--color-1)}
+  #stories .st-list > li { display: grid; min-width: 0; }
+  #stories a.st-card { color: inherit; text-decoration: none; transition: background-color .2s; }
+  #stories a.st-card:hover { background-color: #b6dcd2; }
+  #stories a.st-card:focus-visible { outline: 3px solid var(--color-1); outline-offset: -4px; }
+  #stories .st-icon { box-sizing: border-box; width: 44px; height: 44px; flex: 0 0 44px; padding: 10px; border-radius: 50%; background: var(--color-6); color: var(--color-5); }
+  #stories .st-arrow { width: 20px; height: 20px; margin-left: auto; flex: 0 0 20px; color: var(--color-1); }
+</style>
 <style data-8b-part="layers">@layer tokens, base, atoms, layout, sections, scenes;</style>
 <style data-8b-part="tokens">
 @layer tokens {
@@ -710,25 +717,25 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
     <p class="co-lead m-text-5">Quatro maneiras de aproveitar o mesmo espaço, do treino à pausa depois do jogo.</p>
     <ul class="co-list" data-8b-items=":scope > li">
       <li class="co-item">
-        <figure class="co-photo"><img src="https://images.unsplash.com/photo-1577744168855-0391d2ed2b3a?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8c21pbGluZyUyMG1hbiUyMHNwb3J0c3dlYXIlMjBwb3J0cmFpdHxlbnwxfDJ8fHwxNzkxMjMyMjA3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Foto ilustrativa" width="3786" height="3786" loading="lazy"></figure>
+        <figure class="co-photo"><img src="images/academia.jpg" alt="Máquina de leg press em uma academia" width="800" height="800" loading="lazy"></figure>
         <h3 class="m-text-3">Academia</h3>
         <span class="m-badge" data-8b-motion="drop" style="--drop-rotate-from: 28deg">Até 8 por turma</span>
         <p class="m-text">Treino com acompanhamento em turmas reduzidas.</p>
       </li>
       <li class="co-item">
-        <figure class="co-photo"><img src="https://images.unsplash.com/photo-1635862649934-4d7f4e46742b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OXx8ZmVtYWxlJTIwcnVubmVyJTIwcG9ydHJhaXQlMjBzdHVkaW8lMjBsaWdodCUyMGJhY2tncm91bmR8ZW58MXwxfHx8MTc5MTIzMjE1Nnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Foto ilustrativa" width="3827" height="4949" loading="lazy"></figure>
+        <figure class="co-photo"><img src="images/quadras.jpg" alt="Quadra de vôlei de areia com rede" width="800" height="800" loading="lazy"></figure>
         <h3 class="m-text-3">Quadras</h3>
         <span class="m-badge" data-8b-motion="drop" style="--drop-rotate-from: -28deg">Esportes de areia</span>
         <p class="m-text">Um espaço para jogar e se encontrar na areia.</p>
       </li>
       <li class="co-item">
-        <figure class="co-photo"><img src="https://images.unsplash.com/photo-1683848644087-c3cb69b77d4f?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjBhdGhsZXRlJTIwcG9ydHJhaXQlMjBzdHVkaW98ZW58MXwxfHx8MTc5MTIzMjEzNnww&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Foto ilustrativa" width="2624" height="3936" loading="lazy"></figure>
+        <figure class="co-photo"><img src="images/beach-games.jpg" alt="Crianças jogando bola em uma quadra de areia" width="800" height="800" loading="lazy"></figure>
         <h3 class="m-text-3">Beach Games</h3>
         <span class="m-badge" data-8b-motion="drop" style="--drop-rotate-from: 28deg">4 a 11 anos</span>
         <p class="m-text">Jogos cooperativos na areia para crianças.</p>
       </li>
       <li class="co-item">
-        <figure class="co-photo"><img src="https://images.unsplash.com/photo-1623605931891-d5b95ee98459?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8c21pbGluZyUyMG1hbiUyMHNwb3J0c3dlYXIlMjBwb3J0cmFpdHxlbnwxfDJ8fHwxNzkxMjMyMjA3fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=320&q=60" alt="Foto ilustrativa" width="3456" height="3378" loading="lazy"></figure>
+        <figure class="co-photo"><img src="images/snack-bar.jpg" alt="Açaí, smoothie e sanduíche integral" width="800" height="800" loading="lazy"></figure>
         <h3 class="m-text-3">Snack bar</h3>
         <span class="m-badge" data-8b-motion="drop" style="--drop-rotate-from: -28deg">Alimentação</span>
         <p class="m-text">Uma pausa com opções saudáveis antes ou depois do treino.</p>
@@ -746,22 +753,22 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
       <li class="ds-row m-surface-4" style="--disciplines-li-ds-row-rotate-from: -9deg; --disciplines-li-ds-row-translate-from: 22%; --disciplines-li-ds-row-translate-from-2: 50px; --disciplines-li-ds-row-rotate-from-m: -5deg; --disciplines-li-ds-row-translate-from-m: 5%; --disciplines-li-ds-row-translate-from-2-m: 24px">
         <h3 class="ds-name m-text-2" style="--len:8">Academia</h3>
         <div class="ds-info"><span class="m-badge-3">Até 8 por turma</span><p class="m-text">Treino com acompanhamento em turmas reduzidas.</p></div>
-        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1635863800416-01eaf5b6be2d?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8a2V0dGxlYmVsbCUyMHRyYWluaW5nJTIwd29tYW58ZW58MXwxfHx8MTc5MTIzMjE4OHww&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Foto ilustrativa" width="3840" height="5760" loading="lazy" style="--ds-y:23%"></figure>
+        <figure class="ds-photo"><img src="images/academia.jpg" alt="Máquina de leg press em uma academia" width="800" height="800" loading="lazy"></figure>
       </li>
       <li class="ds-row m-surface-2" style="--disciplines-li-ds-row-rotate-from: 7deg; --disciplines-li-ds-row-translate-from: -8%; --disciplines-li-ds-row-translate-from-2: 100px; --disciplines-li-ds-row-rotate-from-m: 4deg; --disciplines-li-ds-row-translate-from-m: -3%; --disciplines-li-ds-row-translate-from-2-m: 48px">
         <h3 class="ds-name m-text-2" style="--len:7">Quadras</h3>
         <div class="ds-info"><span class="m-badge-3">Esportes de areia</span><p class="m-text">Um espaço para jogar e se encontrar na areia.</p></div>
-        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1784819482818-36e4b287d6dd?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8OHx8aW5kb29yJTIwY3ljbGluZyUyMGNsYXNzfGVufDF8MXx8fDE3OTEyMzIxODd8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Foto ilustrativa" width="4128" height="6192" loading="lazy"></figure>
+        <figure class="ds-photo"><img src="images/quadras.jpg" alt="Quadra de vôlei de areia com rede" width="800" height="800" loading="lazy"></figure>
       </li>
       <li class="ds-row m-surface" style="--disciplines-li-ds-row-rotate-from: -5deg; --disciplines-li-ds-row-translate-from: 34%; --disciplines-li-ds-row-translate-from-2: 150px; --disciplines-li-ds-row-rotate-from-m: -3deg; --disciplines-li-ds-row-translate-from-m: 7%; --disciplines-li-ds-row-translate-from-2-m: 72px">
         <h3 class="ds-name m-text-2" style="--len:11">Beach Games</h3>
         <div class="ds-info"><span class="m-badge-3">4 a 11 anos</span><p class="m-text">Jogos cooperativos na areia para crianças.</p></div>
-        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1575898311530-2af21854a893?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MTB8fGZ1bmN0aW9uYWwlMjB0cmFpbmluZyUyMG1hbiUyMGd5bXxlbnwxfDF8fHwxNzkxMjMyMTg4fDA&ixlib=rb-4.1.0&auto=format&fit=crop&w=300&q=60" alt="Foto ilustrativa" width="4480" height="6720" loading="lazy" style="--ds-y:8%"></figure>
+        <figure class="ds-photo"><img src="images/beach-games.jpg" alt="Crianças jogando bola em uma quadra de areia" width="800" height="800" loading="lazy"></figure>
       </li>
       <li class="ds-row m-surface-4" style="--disciplines-li-ds-row-rotate-from: 10deg; --disciplines-li-ds-row-translate-from: 6%; --disciplines-li-ds-row-translate-from-2: 200px; --disciplines-li-ds-row-rotate-from-m: 5deg; --disciplines-li-ds-row-translate-from-m: 2%; --disciplines-li-ds-row-translate-from-2-m: 96px">
         <h3 class="ds-name m-text-2" style="--len:9">Snack bar</h3>
         <div class="ds-info"><span class="m-badge-3">Alimentação</span><p class="m-text">Uma pausa com opções saudáveis antes ou depois do treino.</p></div>
-        <figure class="ds-photo"><img src="https://images.unsplash.com/photo-1667890786022-83bca6c4f4c2?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8d29tYW4lMjB5b2dhJTIwcG9zZSUyMHN0dWRpbyUyMGxpZ2h0fGVufDF8MXx8fDE3OTEyMzIxODZ8MA&ixlib=rb-4.1.0&auto=format&fit=crop&w=310&q=60" alt="Foto ilustrativa" width="4672" height="7008" loading="lazy" style="--ds-y:32%"></figure>
+        <figure class="ds-photo"><img src="images/snack-bar.jpg" alt="Açaí, smoothie e sanduíche integral" width="800" height="800" loading="lazy"></figure>
       </li>
     </ul>
   </div>
@@ -807,21 +814,21 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
 <section id="stories" class="l-panel m-surface-2" data-8b-section="member-stories">
   <div class="m-notch"><h2 class="m-text-2" data-8b-motion="stretch">Seu lugar<br>na Arena</h2></div>
   <ul class="st-list l-panel__body" data-8b-items=":scope > li">
-    <li class="st-card">
+    <li><a class="st-card" href="https://docs.google.com/forms/d/e/1FAIpQLScGCntlYeHUztvCMg0rlnEyM1D-NmmgUxcyd-B56Aj0QUjJHw/viewform">
       <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,90 C18.3,86.7 43.3,71.7 60,70 C76.7,68.3 93.3,83.3 110,80 C126.7,76.7 143.3,53.7 160,50 C176.7,46.3 193.3,62.3 210,58 C226.7,53.7 245,31.7 260,24 C275,16.3 293.3,14 300,12"/><circle cx="300" cy="12" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop" style="--drop-rotate-from: 28deg">Academia</span></div>
       <p>Indique os horários em que pode treinar.</p>
-      <div class="st-who"><img class="m-avatar" src="isologo.jpg" alt="" width="150" height="150" loading="lazy"><span><b>Lista de espera</b><small>Academia</small></span></div>
-    </li>
-    <li class="st-card">
+      <div class="st-who"><svg class="st-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8v8m12-8v8M3 10v4m18-4v4M6 12h12"/></svg><span><b>Lista de espera</b><small>Academia</small></span><svg class="st-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+    </a></li>
+    <li><a class="st-card" href="https://docs.google.com/forms/d/e/1FAIpQLSfvGa39AA-gphe-VX8Sp-YuxFAh1rqo_aHsxROxExfVFWQ8VA/viewform">
       <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,80 C18.3,78.7 43.3,71.3 60,72 C76.7,72.7 93.3,86 110,84 C126.7,82 143.3,67.3 160,60 C176.7,52.7 193.3,45 210,40 C226.7,35 245,34.3 260,30 C275,25.7 293.3,16.7 300,14"/><circle cx="300" cy="14" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop" style="--drop-rotate-from: -28deg">Beach Games</span></div>
       <p>Informe a faixa etária e o horário de interesse.</p>
-      <div class="st-who"><img class="m-avatar" src="isologo.jpg" alt="" width="150" height="150" loading="lazy"><span><b>Lista de espera</b><small>Crianças de 4 a 11 anos</small></span></div>
-    </li>
-    <li class="st-card">
+      <div class="st-who"><svg class="st-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9 4a10 10 0 0 0 2 8m0 0a11 11 0 0 0 9 2m-9-2a10 10 0 0 0-3 8"/></svg><span><b>Lista de espera</b><small>Crianças de 4 a 11 anos</small></span><svg class="st-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+    </a></li>
+    <li><a class="st-card" href="https://docs.google.com/forms/d/e/1FAIpQLSdcF6LpYVf3jQNBaT4_gfxOSeeL3MHJglXWguqsdR_HEGGzkA/viewform">
       <div class="st-spark"><svg viewBox="0 0 310 110" aria-hidden="true"><path pathLength="100" data-8b-motion="draw" d="M10,96 C18.3,94.7 43.3,88.7 60,88 C76.7,87.3 93.3,95.7 110,92 C126.7,88.3 143.3,69.3 160,66 C176.7,62.7 193.3,77.3 210,72 C226.7,66.7 245,43.3 260,34 C275,24.7 293.3,19 300,16"/><circle cx="300" cy="16" r="7"/></svg><span class="m-badge-3" data-8b-motion="drop" style="--drop-rotate-from: 28deg">Talentos</span></div>
       <p>Conheça o canal de candidaturas da Arena.</p>
-      <div class="st-who"><img class="m-avatar" src="isologo.jpg" alt="" width="150" height="150" loading="lazy"><span><b>Banco de talentos</b><small>Arena G Club</small></span></div>
-    </li>
+      <div class="st-who"><svg class="st-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v14H3zM8 7V4h8v3M3 12a22 22 0 0 0 18 0m-9 1v2"/></svg><span><b>Banco de talentos</b><small>Arena G Club</small></span><svg class="st-arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></div>
+    </a></li>
   </ul>
 </section>
 <!-- monthly-challenge: a monthly 100 km challenge: a route with five checkpoints and rewards, a photo with an arched top and a lime join button (animation: scene:challenge) -->
@@ -934,7 +941,7 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
 <footer id="footer" data-8b-section="footer">
   <p class="ft-word m-text-2" style="--len:12" data-8b-motion="stretch" aria-hidden="true">Arena G Club</p>
   <div class="ft-row m-text-4">
-    <span>© 2026 Arena G Club · Design: <a href="https://8b.com/" style="color:inherit" data-8b-credit>8B</a></span>
+    <span>© 2026 Arena G Club</span>
     <nav aria-label="Footer"><a href="#curve">Início</a><a href="#coaches">A Arena</a><a href="#app">App do aluno</a><a href="#pricing">Inscrições</a><a href="#faq">FAQ</a><a href="#contact">Contato</a></nav>
     <span>Esporte e bem-estar em Óbidos</span>
   </div>
